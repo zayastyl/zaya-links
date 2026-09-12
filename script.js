@@ -13,3 +13,15 @@ function updateParallex(x, y) {
     const touch = e.touches[0];
     updateParallex(touch.clientX, touch.clientY);
   });
+
+ function resizeBg() {
+    if (window.innerWidth <= 768) {
+      const bg = document.querySelector(".bg");
+      bg.style.width = window.innerWidth + "px";
+      bg.style.height = window.innerHeight + "px";
+    }
+  }
+
+  resizeBg();
+  window.addEventListener("resize", resizeBg);
+  window.addEventListener("orientationchange", resizeBg);
