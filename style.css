@@ -235,6 +235,12 @@ img {
   }
 }
 
+@media (maw-width: 768px) {
+    .bg {
+        background-size: cover;
+  }
+}
+
 @keyframes twinkle {
     0%, 100% {
         box-shadow: 0 0 10px #7dd3fc, 0 0 20px #7dd3fc;
