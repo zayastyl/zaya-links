@@ -21,7 +21,3 @@ function updateParallex(x, y) {
       bg.style.height = window.innerHeight + "px";
     }
   }
-
-  resizeBg();
-  window.addEventListener("resize", resizeBg);
-  window.addEventListener("orientationchange", resizeBg);
